@@ -1,0 +1,7 @@
+Balls!
+
+Everyone loves balls, so I made them dance. Mostly a fun mini-project, and an evaluation of PhysicsJS for browser-based 2D physics rendering (result: "not bad!").
+
+Included in this repo are jquery.min.js and physicsjs-full-0.6.0.min.js. Needless to say, I did not create these wonderful things.
+
+P.S. I'm well aware that this project includes a handful of rectangles. I choose not to emphasize the lesser aspects of my doings. Balls 4 lyfe.
