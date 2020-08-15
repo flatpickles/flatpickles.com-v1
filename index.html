@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="src/favicon.ico">
+
+    <title>Matt Nichols</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+			crossorigin="anonymous"></script>
+    <script src="src/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+	    <div class="main">
+			<div class="header">
+				<p class="name">Matt Nichols</p>
+				
+				<p class="socials">
+					<a class="header" href="https://linktr.ee/flatpickles">BLM</a>
+					<span class="separator">//</span>
+					<a class="header" href="http://instagram.com/flatpickles">Instagram</a>
+					<span class="separator">//</span>
+					<a class="header" href="http://twitter.com/flatpickles">Twitter</a><!--
+					<span class="separator">//</span>
+					<a class="header" href="https://tinyletter.com/flatpickles">Newsletter</a>-->
+					<span class="separator">//</span>
+					<a class="header" href="https://forms.gle/sSUgW9YbK9Xxg21x8">Holler</a>
+				</p>
+	
+				<p class= "categories">
+					<span class="category selected all" id="all_selector">All</span>
+					<span class="separator">/</span>
+					<span class="category unselected audio" id="audio_selector">Audio</span>
+					<span class="separator">/</span>
+					<span class="category unselected video" id="video_selector">Video</span>
+					<span class="separator">/</span>
+					<span class="category unselected image" id="image_selector">Image</span>
+					<span class="separator">/</span>
+					<span class="category unselected text" id="text_selector">Text</span>
+					<span class="separator">/</span>
+					<span class="category unselected etc" id="etc_selector">Etc.</span>
+				</p>
+			</div>
+			
+			<table class="list">
+				<tr class="text">
+					<td class="date">07.02.20</td>
+					<td class="project"><a href="text/disassociation.txt">Disassociation</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">06.07.20</td>
+					<td class="project"><a href="video/not-afraid.mp4">Not Afraid</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">05.24.20</td>
+					<td class="project"><a href="text/on-art-and-enlightenment.txt">On Art and Enlightenment</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">05.04.20</td>
+					<td class="project"><a href="video/arrakis.mp4">Arrakis</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">04.24.20</td>
+					<td class="project"><a href="image/circular-energy-wallpaper.png">Circular Energy Wallpaper</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">04.24.20</td>
+					<td class="project"><a href="video/circular-energy.mp4">Circular Energy</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">04.22.20</td>
+					<td class="project"><a href="video/sliding-pattern.mp4">Sliding Pattern</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">04.13.20</td>
+					<td class="project"><a href="video/woven-colors.mp4">Woven Colors</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">04.12.20</td>
+					<td class="project"><a href="video/walrus-whistle.mp4">Walrus Whistle</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">04.04.20</td>
+					<td class="project"><a href="image/spiral-plant.png">Spiral Plant</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.30.20</td>
+					<td class="project"><a href="video/game-of-life.mp4">Game of Life</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.29.20</td>
+					<td class="project"><a href="video/golden-slumbers.mp4">Golden Slumbers</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.28.20</td>
+					<td class="project"><a href="video/trippy-flowers.mp4">Trippy Flowers</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">03.27.20</td>
+					<td class="project"><a href="image/pathogen-header.png">Pathogen Header</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.26.20</td>
+					<td class="project"><a href="video/pathogen.mp4">Pathogen</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.23.20</td>
+					<td class="project"><a href="video/amoebas.mp4">Amoebas</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.20.20</td>
+					<td class="project"><a href="video/keys.mp4">Keys</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">03.18.20</td>
+					<td class="project"><a href="image/keys-header.png">Keys Header</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.17.20</td>
+					<td class="project"><a href="video/cylinder-dance.mp4">Cylinder Dance</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">03.16.20</td>
+					<td class="project"><a href="video/squircle-grid.mp4">Squircle Grid</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">03.10.20</td>
+					<td class="project"><a href="image/circle-taurus.png">Circle Taurus</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">02.18.20</td>
+					<td class="project"><a href="text/on-love-and-marriage.txt">On Love and Marriage</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">02.09.20</td>
+					<td class="project"><a href="video/park-city-ski-run.mp4">Park City Ski Run</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">01.25.20</td>
+					<td class="project"><a href="https://www.instagram.com/ar/499624814016030/">Face Off</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">01.05.20</td>
+					<td class="project"><a href="video/pft.mp4">Pft</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">12.08.19</td>
+					<td class="project"><a href="video/hot-chocolate.mp4">Hot Chocolate</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">11.13.19</td>
+					<td class="project"><a href="image/strawberry-hill.png">Strawberry Hill</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">11.06.19</td>
+					<td class="project"><a href="text/on-happiness.txt">On Happiness</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">10.31.19</td>
+					<td class="project"><a href="video/10000-bugs.mp4">10,000 Bugs</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">10.17.19</td>
+					<td class="project"><a href="video/foster-lockwood.mp4">Foster Lockwood</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">10.12.19</td>
+					<td class="project"><a href="https://open.spotify.com/playlist/5QB5698lV4DguTVmvCZY9W?si=JGKeOjC7TeS8hqx9lhnBlg">Flat Picks - Season 2</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">10.12.19</td>
+					<td class="project"><a href="text/on-self-confidence.txt">On Self-Confidence</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">10.07.19</td>
+					<td class="project"><a href="image/flat-pickles-avatar.png">Flat Pickles Avatar</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">10.06.19</td>
+					<td class="project"><a href="video/late-night-noodles.mp4">Late Night Noodles</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">10.04.19</td>
+					<td class="project"><a href="image/pooper-no-twelve.png">Pooper No. Twelve</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">09.01.20</td>
+					<td class="project"><a href="image/custom-dino-socks.jpg">Custom Dino Socks</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">08.25.19</td>
+					<td class="project"><a href="https://www.instagram.com/ar/614246228981790/">Concentric</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">08.18.19</td>
+					<td class="project"><a href="text/on-intentionality.txt">On Intentionality</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">08.17.19</td>
+					<td class="project"><a href="image/bottles.png">Bottles</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">08.10.19</td>
+					<td class="project"><a href="image/self-sketch.png">Self Sketch</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">08.09.19</td>
+					<td class="project"><a href="https://www.instagram.com/ar/2475772522513707/">Face Drift</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">08.06.19</td>
+					<td class="project"><a href="image/tube-and-friend.png">Tube & Friend</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">06.23.19</td>
+					<td class="project"><a href="image/hang-loose.png">Hang Loose</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">06.23.19</td>
+					<td class="project"><a href="image/spikeball.png">Spikeball</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">06.23.19</td>
+					<td class="project"><a href="text/on-positive-feedback-cycles.txt">On Positive Feedback Cycles</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">06.23.19</td>
+					<td class="project"><a href="image/dino-icon.svg">Dino Icon</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">06.16.19</td>
+					<td class="project"><a href="text/on-disposable-time.txt">On Disposable Time</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">03.30.19</td>
+					<td class="project"><a href="text/untitled-3.txt">Untitled</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">01.21.19</td>
+					<td class="project"><a href="image/mantaur.png">Mantaur</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">01.10.19</td>
+					<td class="project"><a href="image/heavy.png">Heavy</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">01.09.19</td>
+					<td class="project"><a href="image/thoughts.png">Thoughts</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">12.11.18</td>
+					<td class="project"><a href="text/disintegration.txt">Disintegration</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">11.15.18</td>
+					<td class="project"><a href="image/nugs.svg">NUGS</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">11.11.18</td>
+					<td class="project"><a href="text/chili-recipe.txt">Chili Recipe</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">10.15.18</td>
+					<td class="project"><a href="image/breakfast-for-laura.png">Breakfast for Laura</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">10.14.18</td>
+					<td class="project"><a href="image/froggo.png">Froggo</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">09.29.18</td>
+					<td class="project"><a href="https://open.spotify.com/playlist/2FV9kc9KxDPRIPiUMgHtwv?si=wkkoRYEKQGKUTTijPh_Xcw">Flat Picks - Season 1</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">08.31.18</td>
+					<td class="project"><a href="text/bricolage.txt">Bricolage</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">03.11.18</td>
+					<td class="project"><a href="audio/bwm.aif">BWM</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">12.03.17</td>
+					<td class="project"><a href="etc/birdcrime/index.html">Birdcrime</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">11.06.17</td>
+					<td class="project"><a href="text/reverie.txt">Reverie</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">09.23.17</td>
+					<td class="project"><a href="text/untitled-2.txt">Untitled</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">08.15.17</td>
+					<td class="project"><a href="text/presence.txt">Presence</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">07.28.17</td>
+					<td class="project"><a href="text/modern-times.txt">Modern Times</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">06.27.17</td>
+					<td class="project"><a href="text/divine.txt">Divine</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">06.07.17</td>
+					<td class="project"><a href="audio/thank-god-its-fried-chicken.mp3">Thank God It's Fried Chicken</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">05.26.17</td>
+					<td class="project"><a href="text/inertia.txt">Inertia</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">04.09.17</td>
+					<td class="project"><a href="audio/frames-of-reference.mp3">Frames of Reference</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">03.29.17</td>
+					<td class="project"><a href="text/luxury.txt">Luxury</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">02.26.17</td>
+					<td class="project"><a href="text/enter-dependence.txt">Enter: Dependence</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">01.18.17</td>
+					<td class="project"><a href="text/the-solipsist.txt">The Solipsist</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">01.15.17</td>
+					<td class="project"><a href="text/nightmare.txt">Nightmare</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">01.13.17</td>
+					<td class="project"><a href="text/segfault.txt">Segfault</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">01.11.17</td>
+					<td class="project"><a href="audio/lunar-drift.mp3">Lunar Drift</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">01.11.17</td>
+					<td class="project"><a href="image/lunar-drift.png">Lunar Drift</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">01.02.17</td>
+					<td class="project"><a href="text/somniloquy.txt">Somniloquy</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">10.18.16</td>
+					<td class="project"><a href="audio/foslock-and-drop-it.mp3">Foslock and Drop It</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">09.17.16</td>
+					<td class="project"><a href="text/ascendance.txt">Ascendance</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">08.07.16</td>
+					<td class="project"><a href="video/decoupage.mp4">Decoupage</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">08.04.16</td>
+					<td class="project"><a href="text/untitled-1.txt">Untitled</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">07.11.16</td>
+					<td class="project"><a href="video/manimation.mp4">Manimation</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">07.04.16</td>
+					<td class="project"><a href="video/god-bless.mp4">God Bless</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">05.30.16</td>
+					<td class="project"><a href="audio/safety-first.mp3">Safety First</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">05.05.16</td>
+					<td class="project"><a href="audio/depth-charge.mp3">Depth Charge</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">05.05.16</td>
+					<td class="project"><a href="image/glitch.png">Glitch</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">04.12.16</td>
+					<td class="project"><a href="audio/cruise-control.mp3">Cruise Control</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">02.25.16</td>
+					<td class="project"><a href="audio/torque.mp3">Torque</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">01.27.16</td>
+					<td class="project"><a href="audio/post-hoc-ergo-propter-hoc.mp3">Post Hoc Ergo Propter Hoc</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">01.27.16</td>
+					<td class="project"><a href="image/chemtrails.png">Chemtrails</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">12.05.15</td>
+					<td class="project"><a href="audio/whispers-of-solitude.mp3">Whispers of Solitude</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">11.24.15</td>
+					<td class="project"><a href="image/autumn.png">Autumn</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">11.15.15</td>
+					<td class="project"><a href="audio/pupu-platter.wav">Pupu Platter</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">08.17.15</td>
+					<td class="project"><a href="image/abstract-eyes.png">Abstract Eyes</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">08.11.15</td>
+					<td class="project"><a href="etc/basic-paint-app.gif">Basic Paint App</a></td>
+				</tr>
+				<tr class="audio">
+					<td class="date">07.17.15</td>
+					<td class="project"><a href="audio/obae.mp3">OBAE</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">07.13.15</td>
+					<td class="project"><a href="image/matt-hat.png">Matt Hat</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">03.13.15</td>
+					<td class="project"><a href="image/heads-header.png">Heads Header</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">10.28.14</td>
+					<td class="project"><a href="image/weird-eyes.png">Weird Eyes</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">09.22.14</td>
+					<td class="project"><a href="etc/balls/index.html">Balls</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">07.11.14</td>
+					<td class="project"><a href="text/world-population-day.txt">World Population Day</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">05.04.14</td>
+					<td class="project"><a href="video/drip-drop.mp4">Drip Drop</a></td>
+				</tr>
+				<tr class="etc">
+					<td class="date">07.22.14</td>
+					<td class="project"><a href="etc/fractal-generator/index.html">Line Fractal Generator</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">01.01.14</td>
+					<td class="project"><a href="image/caiman-like-a-wrecking-ball.png">Caiman Like A Wrecking Ball</a></td>
+				</tr>
+				<tr class="video">
+					<td class="date">12.18.12</td>
+					<td class="project"><a href="video/rolling-shutter.mp4">Rolling Shutter Post-Processing</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">12.07.12</td>
+					<td class="project"><a href="image/first-snow.jpg">First Snow</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">10.02.12</td>
+					<td class="project"><a href="image/impermanence.jpg">Impermanence</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">07.29.12</td>
+					<td class="project"><a href="text/stories.txt">Stories</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">06.14.12</td>
+					<td class="project"><a href="text/fog.txt">Fog</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">05.24.12</td>
+					<td class="project"><a href="text/wander.txt">Wander</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">04.01.12</td>
+					<td class="project"><a href="text/incompleteness.txt">Incompleteness</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">12.21.11</td>
+					<td class="project"><a href="text/endings.txt">Endings</a></td>
+				</tr>
+				<tr class="text">
+					<td class="date">11.08.11</td>
+					<td class="project"><a href="text/overcast.txt">Overcast</a></td>
+				</tr>
+				<tr class="image">
+					<td class="date">11.04.10</td>
+					<td class="project"><a href="image/butter.jpg">Butter</a></td>
+				</tr>
+			</table>
+	    </div>
+	    
+	    <div class="footer">
+		    <p>A DJ Ham Hands Production</p>
+	    </div>
+    </div>
+  </body>
+</html>

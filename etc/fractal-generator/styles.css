@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	background-color: #ebf0e0;
+}
+
+#header {
+	font-family: 'Carrois Gothic SC', serif;
+	font-size: 2.5em;
+	text-align: center;
+	padding: 20px;
+}
+
+#wrapper {
+	width: 804px;
+	margin: auto;
+}
+
+button {
+	font-family: 'Oxygen', sans-serif;
+	width: 100%;
+}
+
+#control-panel {
+	margin-top: 10px;
+}
+
+td {
+	padding-right: 10px;
+}
+
+#clear {
+	clear: both;
+}
+
+#controls {
+	line-height: 1.08em;
+	border-left: 2px solid;
+	border-top: 2px solid;
+	height: 240px;
+	width: 399px;
+	float: left;
+	background-color: #e4f0ef;
+}
+
+#controls-internal {
+	width: 380px;
+	height: 180px;
+	padding: 10px;
+	text-align: justify;
+}
+
+#template {
+	border-right: 2px solid;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	height: 240px;
+	width: 399px;
+	float: right;
+	clear: right;
+	background-color: #eef8f7;
+}
+
+#rendered {
+	border: 2px solid;
+	height: 480px;
+	width: 800px;
+	margin: 0px;
+	background-color: #fafafa;
+}
+
+#footer {
+	text-align: right;
+	padding: 20px;
+	color: #b9beae;
+}
+
+a.footer {
+	color: #babfaf;
+	text-decoration: none;
+}
+
+a.footer:hover {
+	text-decoration: underline;
+}
