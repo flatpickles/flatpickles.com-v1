@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-/*å
-@media (min-width: 300px) {
-  .container {
-    max-width: 300px;
-  }
-  
+
+@media (min-width: 480px) {
   body {
-	text-align: justify;
+	padding-top: 0em;
+	padding-bottom: 0em;
   }
 }
-*/
-
 
 :root {
 	--background: #0C1C54;
