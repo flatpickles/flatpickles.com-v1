@@ -28,6 +28,13 @@ body {
 	padding-bottom: 7em;
 }
 
+@media (max-width: 480px) {
+	body {
+		padding-top: 0em;
+		padding-bottom: 0em;
+	}
+}
+
 td {
 	padding-bottom: 0.5em;
 	padding-right: 0.5em;
@@ -82,8 +89,8 @@ a.header {
 }
 
 .container {
-	padding-top: 1.5em;
-	padding-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	padding-left: 0;
 	padding-right: 0;
 	display: inline-block;
@@ -118,18 +125,4 @@ a.header {
 
 .unselected:hover {
 	text-decoration: underline;
-}
-
-@media (max-width: 480px) {
-	body {
-		padding-top: 0em;
-		padding-bottom: 0em;
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-
-	.container {
-		padding-top: 1em;
-		padding-bottom: 0em;
-	}
 }
