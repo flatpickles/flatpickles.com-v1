@@ -28,15 +28,6 @@ body {
 	padding-bottom: 7em;
 }
 
-@media (max-width: 480px) {
-  body {
-	padding-top: 0em;
-	padding-bottom: 0em;
-	max-width: 100%;
-    overflow-x: hidden;
-  }
-}
-
 td {
 	padding-bottom: 0.5em;
 	padding-right: 0.5em;
@@ -127,4 +118,18 @@ a.header {
 
 .unselected:hover {
 	text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+	body {
+		padding-top: 0em;
+		padding-bottom: 0em;
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	.container {
+		padding-top: 1em;
+		padding-bottom: 0em;
+	}
 }
