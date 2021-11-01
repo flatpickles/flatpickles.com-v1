@@ -84,6 +84,7 @@ a.header {
 
 .date {
 	color: var(--date);
+	padding-right: 0.75em;
 }
 
 .container {
