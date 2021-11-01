@@ -22,15 +22,8 @@ body {
 	background: var(--background);
 	color: var(--main-text);
 	font-size: 20px;
-	padding-top: 7em;
-	padding-bottom: 7em;
-}
-
-@media (max-width: 600px) {
-	body {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 td {
@@ -87,29 +80,55 @@ a.header {
 }
 
 .container {
+	padding: 0em;
 	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-left: 0;
-	padding-right: 0;
 	display: inline-block;
 	text-align: left;
 	width: auto;
-	min-width: 440px;
 }
 
 .main {
 	background: var(--foreground);
-	padding: 1em;
-	padding-bottom: 0.5em;
+	padding: 2em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.header_top {
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+}
+
+.header_spacer {
+	flex-grow: 1;
+}
+
+img.social {
+	height: 2em;
 }
 
 .name {
 	font-size: 2em;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.categories {
+	clear: both;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	margin: 0;
+	gap: 0.5em;
+	padding-bottom: 1em;
 }
 
 .footer {
 	text-align: center;
-	padding: 0.5em;
+	padding: 1em;
+	padding-bottom: 0;
 	color: var(--foreground);
 }
 
