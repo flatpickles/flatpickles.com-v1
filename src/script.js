@@ -6,6 +6,16 @@ const categories = [
 	"etc",
 ];
 
+const footers = [
+	"A DJ Ham Hands Production",
+	"Free Range, Grass Fed, California Beef",
+	"And now, please consider going outside!",
+	"Y’all come back soon now, ya hear?",
+	"Be kind, stay hydrated",
+	"Take a deep breath, and keep moving.",
+	"Help, I'm trapped in the computer",
+];
+
 function selectTarget(target) {
 	// Select selected selectors
 	const newSelection = $(target);
@@ -52,4 +62,9 @@ $(document).ready(function() {
 	$("span.category").click(function(e) {
 		selectTarget(e.target);
 	});
+
+	// Randomly populate footer text
+	const footerIndex = Math.floor(Math.random() * footers.length);
+	const randomFooter = footers[footerIndex];
+	$("p.footer_text").html(randomFooter);
 });
