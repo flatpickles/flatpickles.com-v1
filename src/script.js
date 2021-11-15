@@ -50,6 +50,12 @@ function selectTarget(target) {
 	unselectedRows.hide();
 }
 
+function randomizeFooter() {
+	const footerIndex = Math.floor(Math.random() * footers.length);
+	const randomFooter = footers[footerIndex];
+	$("p.footer_text").html(randomFooter);
+}
+
 $(document).ready(function() {
 	// Select category via URL hash parameter
 	const hash = window.location.hash;
@@ -61,10 +67,9 @@ $(document).ready(function() {
 	// Select categories via user clicks
 	$("span.category").click(function(e) {
 		selectTarget(e.target);
+		randomizeFooter();
 	});
 
 	// Randomly populate footer text
-	const footerIndex = Math.floor(Math.random() * footers.length);
-	const randomFooter = footers[footerIndex];
-	$("p.footer_text").html(randomFooter);
+	randomizeFooter();
 });
