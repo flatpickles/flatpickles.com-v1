@@ -14,6 +14,7 @@ const footers = [
 	"Be kind, stay hydrated",
 	"Take a deep breath, and keep moving.",
 	"Help, I'm trapped in the computer",
+	"Whatever it is, stop worrying about it"
 ];
 
 function selectTarget(target) {
