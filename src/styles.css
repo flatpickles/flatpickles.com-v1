@@ -1,4 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-face {
+	font-family: VulfMono-Black;
+	src: url('../fonts/Vulf_Mono-Black_web.woff2') format('woff2'),
+		 url('../fonts/Vulf_Mono-Black_web.woff') format('woff'),
+		 url('../fonts/Vulf_Mono-Black_web.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: VulfMono-Light;
+	src: url('../fonts/Vulf_Mono-Light_web.woff2') format('woff2'),
+		 url('../fonts/Vulf_Mono-Light_web.woff') format('woff'),
+		 url('../fonts/Vulf_Mono-Light_web.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: VulfSans-Regular;
+	src: url('../fonts/Vulf_Sans-Regular.woff2') format('woff2'),
+		 url('../fonts/Vulf_Sans-Regular.woff') format('woff'),
+		 url('../fonts/Vulf_Sans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: VulfSans-Light;
+	src: url('../fonts/Vulf_Sans-Light.woff2') format('woff2'),
+		 url('../fonts/Vulf_Sans-Light.woff') format('woff'),
+		 url('../fonts/Vulf_Sans-Light.ttf') format('truetype');
+}
 
 :root {
 	--background: #0C1C54;
@@ -16,9 +42,9 @@
 }
 
 body {
+	font-family: 'VulfSans-Light', Helvetica, Arial, sans-serif;
 	text-align: center;
 	min-height: 100%;
-	font-family: 'Raleway', sans-serif;
 	background: var(--background);
 	color: var(--main-text);
 	font-size: 20px;
@@ -83,8 +109,12 @@ a.header {
 }
 
 .date {
+	font-family: 'VulfMono-Light', Helvetica, Arial, sans-serif;
+	font-size: 16px;
 	color: var(--date);
 	padding-right: 0.75em;
+	vertical-align: center;
+	padding-top: 2px;
 }
 
 .container {
@@ -118,20 +148,25 @@ img.social {
 }
 
 .name {
-	font-size: 2em;
+	font-family: 'VulfMono-Black', Helvetica, Arial, sans-serif;
+	font-size: 48px;
 	float: left;
 	padding: 0;
 	margin: 0;
 }
 
 .categories {
+	font-family: 'VulfSans-Regular', Helvetica, Arial, sans-serif;
 	clear: both;
 	display: flex;
 	justify-content: space-between;
-	font-weight: bold;
 	margin: 0;
 	gap: 0.5em;
 	padding-bottom: 1em;
+}
+
+.separator {
+	font-family: 'VulfSans-Light', Helvetica, Arial, sans-serif;
 }
 
 .footer {
