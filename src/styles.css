@@ -113,8 +113,8 @@ a.header {
 	font-size: 16px;
 	color: var(--date);
 	padding-right: 0.75em;
-	vertical-align: center;
-	padding-top: 2px;
+	vertical-align: bottom;
+	padding-bottom: 6px;
 }
 
 .container {
@@ -129,7 +129,7 @@ a.header {
 .main {
 	background: var(--foreground);
 	padding: 2em;
-	padding-top: 1.5em;
+	padding-top: 1em;
 	padding-bottom: 1.5em;
 }
 
@@ -169,7 +169,7 @@ img.social {
 	font-family: 'VulfSans-Light', Helvetica, Arial, sans-serif;
 }
 
-.footer {
+.footer {;
 	text-align: center;
 	padding: 1em;
 	padding-bottom: 0;
