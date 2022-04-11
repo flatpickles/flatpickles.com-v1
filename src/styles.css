@@ -162,14 +162,14 @@ img.social {
 	justify-content: space-between;
 	margin: 0;
 	gap: 0.5em;
-	padding-bottom: 1em;
+	padding-bottom: 0.75em;
 }
 
 .separator {
 	font-family: 'VulfSans-Light', Helvetica, Arial, sans-serif;
 }
 
-.footer {;
+.footer {
 	text-align: center;
 	padding: 1em;
 	padding-bottom: 0;
