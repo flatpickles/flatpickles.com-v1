@@ -9,12 +9,11 @@ const categories = [
 const footers = [
 	"A DJ Ham Hands Production",
 	"Free Range, Grass Fed, California Beef",
-	"And now, please consider going outside!",
+	"Please consider going outside",
 	"Y’all come back soon now, ya hear?",
 	"Be kind, stay hydrated",
-	"Take a deep breath, and keep moving.",
+	"Take a deep breath",
 	"Help, I'm trapped in the computer",
-	"Whatever it is, stop worrying about it"
 ];
 
 function selectTarget(target) {
