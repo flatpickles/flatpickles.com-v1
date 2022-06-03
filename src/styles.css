@@ -1,29 +1,25 @@
 @font-face {
 	font-family: VulfMono-Black;
 	src: url('../fonts/Vulf_Mono-Black_web.woff2') format('woff2'),
-		 url('../fonts/Vulf_Mono-Black_web.woff') format('woff'),
-		 url('../fonts/Vulf_Mono-Black_web.ttf') format('truetype');
+		 url('../fonts/Vulf_Mono-Black_web.woff') format('woff');
 }
 
 @font-face {
 	font-family: VulfMono-Light;
 	src: url('../fonts/Vulf_Mono-Light_web.woff2') format('woff2'),
-		 url('../fonts/Vulf_Mono-Light_web.woff') format('woff'),
-		 url('../fonts/Vulf_Mono-Light_web.ttf') format('truetype');
+		 url('../fonts/Vulf_Mono-Light_web.woff') format('woff');
 }
 
 @font-face {
 	font-family: VulfSans-Regular;
 	src: url('../fonts/Vulf_Sans-Regular.woff2') format('woff2'),
-		 url('../fonts/Vulf_Sans-Regular.woff') format('woff'),
-		 url('../fonts/Vulf_Sans-Regular.ttf') format('truetype');
+		 url('../fonts/Vulf_Sans-Regular.woff') format('woff');
 }
 
 @font-face {
 	font-family: VulfSans-Light;
 	src: url('../fonts/Vulf_Sans-Light.woff2') format('woff2'),
-		 url('../fonts/Vulf_Sans-Light.woff') format('woff'),
-		 url('../fonts/Vulf_Sans-Light.ttf') format('truetype');
+		 url('../fonts/Vulf_Sans-Light.woff') format('woff');
 }
 
 :root {
