@@ -53,6 +53,7 @@ body {
 	body {
 		padding-top: 0em;
 		padding-bottom: 1em;
+		overscroll-behavior: auto;
 	}
 
 	glslCanvas {
