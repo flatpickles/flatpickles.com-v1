@@ -77,7 +77,7 @@ float snoise(vec3 v) {
     return value * 0.5 + 0.5;
 }
 
-const float seed = 5.9 + u_time/70.0;
+float seed = 5.9 + u_time/70.0;
 const float fadeInTime = 3.0;
 const float size = 0.3;
 const float layers = 7.;
