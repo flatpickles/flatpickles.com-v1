@@ -77,26 +77,43 @@ float snoise(vec3 v) {
     return value * 0.5 + 0.5;
 }
 
+float circularOut(float t) {
+  return sqrt((2.0 - t) * t);
+}
+
 float seed = 5.9 + u_time/70.0;
 const float fadeInTime = 3.0;
 const float size = 0.3;
 const float layers = 7.;
 const float layerSize = 0.4;
+const float edgeDepth = 0.1;
 
 const vec3 foregroundColor = vec3(29.0/255.0, 48.0/255.0, 116.0/255.0);
 const vec3 backgroundColor = vec3(12.0/255.0, 28.0/255.0, 84.0/255.0);
 
 void main() {
+  // Maintain scaling for different aspect ratios
 	float aspectRatio = float(u_resolution.x) / float(u_resolution.y);
 	vec2 uv = gl_FragCoord.xy/u_resolution.xy;
-	uv = uv * 2.0 - 1.;
 	uv.x *= aspectRatio;
 
+  // Fade out at the edges
+  vec2 mirroredUV = vec2(aspectRatio, 1.0) - uv;
+  float edgeDistance = min(min(uv.x, uv.y), min(mirroredUV.x, mirroredUV.y));
+  float edgeMultiplier = circularOut(smoothstep(0.0, edgeDepth, edgeDistance));
+
+  // Maintain scaling (continued)
+	uv.x *= aspectRatio;
+	uv = uv * 2.0 - 1.;
+
+  // Render noise pattern & mask with modifiers
 	float noise = snoise(vec3(uv * size, seed));
   float lineMask = smoothstep(layerSize, 0.0, abs(0.5 - fract(noise * layers)));
   float fadeIn = clamp(mix(0.0, 1.0, u_time/fadeInTime), 0.0, 1.0);
   lineMask *= fadeIn;
+  lineMask *= edgeMultiplier;
+
+  // Output
   vec3 color = (lineMask * foregroundColor) + ((1.0 - lineMask) * backgroundColor);
-	
 	gl_FragColor = vec4(color, 1.0);
 }
