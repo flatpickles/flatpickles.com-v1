@@ -86,7 +86,7 @@ const float fadeInTime = 3.0;
 const float size = 0.3;
 const float layers = 7.;
 const float layerSize = 0.4;
-const float edgeDepth = 0.1;
+const float edgeDepth = 0.03;
 
 const vec3 foregroundColor = vec3(29.0/255.0, 48.0/255.0, 116.0/255.0);
 const vec3 backgroundColor = vec3(12.0/255.0, 28.0/255.0, 84.0/255.0);
