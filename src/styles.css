@@ -56,7 +56,7 @@ body {
 		overscroll-behavior: auto;
 	}
 
-	glslCanvas {
+	.glslCanvas {
 		visibility: hidden;
 	}
 }
