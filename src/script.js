@@ -6,6 +6,11 @@ const categories = [
 	"etc",
 ];
 
+const nameText = [
+	"Flat Pickles",
+	"Matt Nichols"
+];
+
 const footers = [
 	"A DJ Ham Hands Production",
 	"Free Range, Grass Fed, California Beef",
@@ -56,6 +61,25 @@ function randomizeFooter() {
 	$("p.footer_text").html(randomFooter);
 }
 
+let titleTextAnimationPosition = 0;
+let titleTextAnimationTimeout = null;
+function animateTitleText(forward) {
+	// Clear current animation
+	if (titleTextAnimationTimeout) clearTimeout(titleTextAnimationTimeout);
+	titleTextAnimationTimeout = null;
+	
+	// Update display
+	titleTextAnimationPosition = titleTextAnimationPosition + (forward ? 1 : -1);
+	titleTextAnimationPosition = Math.max(0, Math.min(nameText[0].length - 1, titleTextAnimationPosition));
+	const compoundString = nameText[0].substring(0, titleTextAnimationPosition) + nameText[1].substring(titleTextAnimationPosition);
+	$("p.name").text(compoundString);
+
+	// Schedule next update
+	if (titleTextAnimationPosition > 0 && titleTextAnimationPosition < nameText[0].length - 1) {
+		titleTextAnimationTimeout = setTimeout(animateTitleText.bind(this, forward), 100);
+	}
+}
+
 $(document).ready(function() {
 	// Select category via URL hash parameter
 	const hash = window.location.hash;
@@ -72,4 +96,13 @@ $(document).ready(function() {
 
 	// Randomly populate footer text
 	randomizeFooter();
+
+	// Configure name animation
+	$("p.name").hover((e) => {
+		if (e.type === "mouseenter") {
+			animateTitleText(true);
+		} else if (e.type === "mouseleave") {
+			animateTitleText(false);
+		}
+	})
 });
