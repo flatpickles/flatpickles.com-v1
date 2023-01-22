@@ -1,0 +1,15 @@
+Retiring flatpickles.com v1
+-------
+
+This note is the final project that I'll post on flatpickles.com v1, and it's also the only project which will *not* be available on the next version. A dedicated goodbye of sorts.
+
+I've been making personal websites for over two decades, but this is the first one that's felt sustainably consistent with who I am. This feeling comes both from within and without – I see myself in this design, as do the friends who have kindly complimented its aesthetic and intentions. The most salient thing I've learned from v1 is that having a space where I can post *everything* I make is extremely valuable to me. Bringing my whole self to the internet feels both validating and motivating, across the many dimensions of my creative self.
+
+Perhaps it's silly to retire this website so soon, but I'm excited to explore a new design direction, and develop some expanded functionality. The minimalist technical design of v1 was very much intentional, and while v2 is more complex, I hope it will preserve the positive aspects of a minimal aesthetic, while also improving upon the UX and publishing experience.
+
+Above all, flatpickles.com is a tool I will continue using to figure out who I am, and what I want to put out into the world. Self-presentation and self-determination are deeply interrelated projects, and I feel blessed to be making progress in both.
+
+As always, thanks for visiting, reading, and being you!
+
+With love,
+-Matt
